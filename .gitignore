@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Artefactos generados durante el taller
+respuesta_1b.txt
+respuesta_27b.txt
+respuesta_32b.txt
+reporte_ejecutivo.txt
+requirements.lock.txt
+trafico_instructor.png
+trafico_red.png
+notebook/trafico_red.csv
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+
+# Salida de demo.py
+demo/
+
+# PCAP captures (pueden ser archivos grandes)
+captures/*.pcap
+captures/*.pcap.gz
+captures/*.cap
+captures/*.pcapng

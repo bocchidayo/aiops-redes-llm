@@ -1,0 +1,188 @@
+=== RESUMEN DE CAPTURA DE RED - bigFlows.pcap ===
+Duracion        : 4 min 59 s
+Paquetes totales: 791,615
+Bytes totales   : 355.4 MB
+Tamano medio pkt: 448 bytes
+Flujos unicos   : 17,395
+
+PROTOCOLOS:
+  TCP   :    633,894 paquetes ( 80.1%)
+  UDP   :    152,733 paquetes ( 19.3%)
+  ICMP  :      4,266 paquetes (  0.5%)
+  Other :        286 paquetes (  0.0%)
+
+IPs INTERNAS (RFC1918):
+  Hosts unicos    : 139
+  Bytes enviados  : 103.7 MB (interno -> externo)
+  Bytes recibidos : 209.2 MB (externo -> interno)
+
+IPs EXTERNAS:
+  Hosts unicos    : 1769
+  Bytes enviados  : 209.2 MB
+  Bytes recibidos : 103.7 MB
+
+RATIO ENTRADA/SALIDA:
+  Enviado  (interno->externo): 103.7 MB
+  Recibido (externo->interno): 209.2 MB
+  Ratio: 2.0x
+  Nota: normal - entre ambos
+
+TOP 10 CONVERSACIONES MAS ACTIVAS:
+  1. 172.16.133.57 -> 68.64.21.62:1853 (UDP)
+     Paquetes: 25,733 (3.3%) | Bytes: 17.3 MB | Duracion: 4m 59s | Pkt medio: 673 bytes
+     Origen: INTERNO | Destino: EXTERNO
+  2. 68.64.21.62 -> 172.16.133.57:53807 (UDP)
+     Paquetes: 14,980 (1.9%) | Bytes: 2.4 MB | Duracion: 4m 59s | Pkt medio: 163 bytes
+     Origen: EXTERNO | Destino: INTERNO
+  3. 172.16.133.95 -> 157.56.240.102:443/HTTPS (TCP)
+     Paquetes: 13,143 (1.7%) | Bytes: 17.4 MB | Duracion: 4m 24s | Pkt medio: 1322 bytes
+     Origen: INTERNO | Destino: EXTERNO
+  4. 172.16.133.36 -> 67.217.64.99:443/HTTPS (TCP)
+     Paquetes: 12,064 (1.5%) | Bytes: 15.9 MB | Duracion: 4m 59s | Pkt medio: 1315 bytes
+     Origen: INTERNO | Destino: EXTERNO
+  5. 67.217.64.99 -> 172.16.133.26:53037 (TCP)
+     Paquetes: 11,549 (1.5%) | Bytes: 15.0 MB | Duracion: 4m 57s | Pkt medio: 1298 bytes
+     Origen: EXTERNO | Destino: INTERNO
+  6. 172.16.133.116 -> 172.16.139.250:5440 (TCP)
+     Paquetes: 9,316 (1.2%) | Bytes: 935.8 KB | Duracion: 4m 59s | Pkt medio: 100 bytes
+     Origen: INTERNO | Destino: INTERNO
+  7. 157.56.240.102 -> 172.16.133.95:49358 (TCP)
+     Paquetes: 8,391 (1.1%) | Bytes: 503.5 KB | Duracion: 4m 0s | Pkt medio: 60 bytes
+     Origen: EXTERNO | Destino: INTERNO
+  8. 67.217.64.99 -> 172.16.133.36:64953 (TCP)
+     Paquetes: 6,119 (0.8%) | Bytes: 427.6 KB | Duracion: 4m 57s | Pkt medio: 69 bytes
+     Origen: EXTERNO | Destino: INTERNO
+  9. 172.16.133.42 -> 172.16.139.250:5500 (TCP)
+     Paquetes: 4,934 (0.6%) | Bytes: 1.9 MB | Duracion: 4m 58s | Pkt medio: 383 bytes
+     Origen: INTERNO | Destino: INTERNO
+  10. 172.16.133.26 -> 67.217.64.99:443/HTTPS (TCP)
+     Paquetes: 4,811 (0.6%) | Bytes: 304.2 KB | Duracion: 4m 59s | Pkt medio: 63 bytes
+     Origen: INTERNO | Destino: EXTERNO
+
+PERFIL DE HOSTS INTERNOS (top 5 por bytes enviados):
+
+  172.16.133.57 - 19.2 MB enviados | 4.0 MB recibidos
+    Destinos unicos      : 37 IPs
+    Puertos unicos usados: 15
+    Puertos mas usados   : 1853 (85%), 443/HTTPS (12%), 8080/HTTP-alt (2%)
+    Destinos principales : 68.64.21.62 (17.3 MB), 157.56.242.198 (986.8 KB), 184.73.181.74 (499.6 KB)
+    Protocolo dominante  : UDP
+
+  172.16.133.95 - 17.9 MB enviados | 1.6 MB recibidos
+    Destinos unicos      : 30 IPs
+    Puertos unicos usados: 7
+    Puertos mas usados   : 443/HTTPS (78%), 5440 (19%), 80/HTTP (3%)
+    Destinos principales : 157.56.240.102 (17.4 MB), 172.16.139.250 (326.4 KB), 216.52.242.80 (46.2 KB)
+    Protocolo dominante  : TCP
+
+  172.16.133.36 - 17.1 MB enviados | 1.4 MB recibidos
+    Destinos unicos      : 35 IPs
+    Puertos unicos usados: 6
+    Puertos mas usados   : 443/HTTPS (82%), 1853 (17%), 5222 (0%)
+    Destinos principales : 67.217.64.99 (15.9 MB), 68.64.21.42 (500.1 KB), 54.243.254.190 (445.0 KB)
+    Protocolo dominante  : TCP
+
+  172.16.133.116 - 5.7 MB enviados | 6.3 MB recibidos
+    Destinos unicos      : 27 IPs
+    Puertos unicos usados: 10
+    Puertos mas usados   : 5440 (57%), 443/HTTPS (32%), 80/HTTP (8%)
+    Destinos principales : 96.43.146.48 (3.7 MB), 172.16.139.250 (1.1 MB), 96.43.146.176 (426.9 KB)
+    Protocolo dominante  : TCP
+
+  172.16.128.201 - 5.6 MB enviados | 332.4 KB recibidos
+    Destinos unicos      : 1 IPs
+    Puertos unicos usados: 12
+    Puertos mas usados   : 1731 (90%), 1735 (6%), 1179 (2%)
+    Destinos principales : 172.16.133.6 (5.6 MB)
+    Protocolo dominante  : TCP
+
+PUERTOS NO ESTANDAR DETECTADOS:
+  Puerto 5440 - 137,802 paquetes | TCP | INUSUAL
+    Origenes  (51 unicos): 172.16.133.116 (9,316 pkts), 172.16.133.42 (4,316 pkts)
+    Destinos  (1 unicos): 172.16.139.250
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 1853 - 68,235 paquetes | UDP | INUSUAL
+    Origenes  (18 unicos): 172.16.133.57 (26,068 pkts), 172.16.133.56 (3,001 pkts)
+    Destinos  (16 unicos): 68.64.21.62, 68.64.21.45
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 5500 - 31,854 paquetes | TCP | INUSUAL
+    Origenes  (53 unicos): 172.16.133.42 (4,934 pkts), 172.16.133.35 (2,840 pkts)
+    Destinos  (1 unicos): 172.16.139.250
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 53807 - 15,274 paquetes | UDP | INUSUAL
+    Origenes  (3 unicos): 68.64.21.62 (14,980 pkts), 67.217.78.31 (162 pkts)
+    Destinos  (1 unicos): 172.16.133.57
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 53037 - 11,549 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 67.217.64.99 (11,549 pkts)
+    Destinos  (1 unicos): 172.16.133.26
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 5462 - 10,050 paquetes | TCP | INUSUAL
+    Origenes  (53 unicos): 172.16.133.42 (866 pkts), 172.16.133.67 (834 pkts)
+    Destinos  (1 unicos): 172.16.139.250
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 49358 - 8,391 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 157.56.240.102 (8,391 pkts)
+    Destinos  (1 unicos): 172.16.133.95
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 64953 - 6,119 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 67.217.64.99 (6,119 pkts)
+    Destinos  (1 unicos): 172.16.133.36
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 1731 - 4,422 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 172.16.128.201 (4,422 pkts)
+    Destinos  (1 unicos): 172.16.133.6
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 60283 - 3,642 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 74.125.226.70 (3,642 pkts)
+    Destinos  (1 unicos): 172.16.133.87
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 64373 - 3,291 paquetes | TCP | INUSUAL
+    Origenes  (2 unicos): 157.56.242.198 (3,287 pkts), 216.52.121.177 (4 pkts)
+    Destinos  (2 unicos): 172.16.133.114, 172.16.133.54
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 49311 - 3,278 paquetes | TCP | INUSUAL
+    Origenes  (1 unicos): 132.245.1.150 (3,278 pkts)
+    Destinos  (1 unicos): 172.16.133.39
+    Nota      : Puerto no registrado - investigar aplicacion
+  Puerto 60658 - 3,132 paquetes | UDP | INUSUAL
+    Origenes  (2 unicos): 74.125.170.143 (3,131 pkts), 172.16.128.202 (1 pkts)
+    Destinos  (2 unicos): 172.16.133.73, 172.16.133.48
+    Nota      : Puerto no registrado - investigar aplicacion
+
+ACTIVIDAD TEMPORAL (ventanas de 30 s):
+  Ventana mas activa   : +2m00s -> +2m30s | 95,401 paquetes
+  2a mas activa        : +0m30s -> +1m00s | 86,142 paquetes
+  3a mas activa        : +0m00s -> +0m30s | 84,961 paquetes
+  4a mas activa        : +1m30s -> +2m00s | 84,220 paquetes
+  5a mas activa        : +1m00s -> +1m30s | 84,143 paquetes
+  Ventana mas tranquila: +3m30s -> +4m00s | 62,517 paquetes
+  Pico vs valle        : 1.5x diferencia
+
+SENALES DE ALERTA AUTOMATICAS:
+  !! 172.16.133.57 envio 19.2 MB en 4 min 59 s - supera umbral de 15 MB
+  !! 172.16.133.95 envio 17.9 MB en 4 min 59 s - supera umbral de 15 MB
+  !! 172.16.133.36 envio 17.1 MB en 4 min 59 s - supera umbral de 15 MB
+  !! Puerto 5440 tiene 137,802 paquetes - puerto no estandar con alto volumen
+  !! Puerto 1853 tiene 68,235 paquetes - puerto no estandar con alto volumen
+  !! 172.16.133.97: ratio enviado/recibido = 20.8x - posible exfiltracion
+  !! 172.16.133.112: ratio enviado/recibido = 10.2x - posible exfiltracion
+  !! 172.16.139.250: ratio recibido/enviado = 403.8x - posible descarga masiva
+  !! 172.16.133.13: ratio enviado/recibido = 10.3x - posible exfiltracion
+  !! 172.16.133.26: ratio recibido/enviado = 10.5x - posible descarga masiva
+  !! 172.16.133.42: ratio enviado/recibido = 24.9x - posible exfiltracion
+  !! 172.16.133.6: ratio recibido/enviado = 12.5x - posible descarga masiva
+  !! 172.16.133.55: ratio enviado/recibido = 9.4x - posible exfiltracion
+  !! 172.16.133.16: ratio recibido/enviado = 13.3x - posible descarga masiva
+  !! 172.16.133.39: ratio recibido/enviado = 15.1x - posible descarga masiva
+  !! 172.16.128.233: ratio recibido/enviado = 12.8x - posible descarga masiva
+  !! 172.16.133.11: ratio enviado/recibido = 13.4x - posible exfiltracion
+  !! 172.16.133.95: ratio enviado/recibido = 11.3x - posible exfiltracion
+  !! 172.16.128.201: ratio enviado/recibido = 16.8x - posible exfiltracion
+  !! 172.16.133.73: ratio recibido/enviado = 11.5x - posible descarga masiva
+  !! 172.16.133.184: ratio recibido/enviado = 10.2x - posible descarga masiva
+  !! 172.16.133.254: ratio enviado/recibido = 20.7x - posible exfiltracion
+  !! 172.16.133.46: ratio enviado/recibido = 57.0x - posible exfiltracion
+  !! 172.16.133.36: ratio enviado/recibido = 12.3x - posible exfiltracion
+  !! 172.16.133.35: ratio enviado/recibido = 36.1x - posible exfiltracion
+  !! 172.16.133.43: ratio enviado/recibido = 9.5x - posible exfiltracion
